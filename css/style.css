@@ -1,1 +1,271 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf3;
+    color: #40291d;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #4b2e20;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #ffc56b;
+}
+
+.hero {
+    padding: 60px 8%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    background: #f4e1c8;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #a85e28;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #a85e28;
+}
+
+.hero-text > p:not(.small-title) {
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 330px;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 17px;
+    background: #a85e28;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #75401f;
+    transform: translateY(-2px);
+}
+
+.section {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.section h2,
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #806b5d;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #4b2e2018;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 12px;
+    background: #f8ead8;
+    display: block;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #806b5d;
+    margin-bottom: 12px;
+}
+
+.harga {
+    color: #a85e28;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.about {
+    padding: 50px 8%;
+    background: #f4e1c8;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 15px auto 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #4b2e2018;
+    overflow-wrap: anywhere;
+}
+
+.contact-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin-bottom: 15px;
+    color: #806b5d;
+}
+
+.contact-link {
+    color: #a85e28;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #4b2e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 6%;
+    }
+
+    .hero-image img {
+        max-width: 230px;
+        max-height: 220px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+}
+```
